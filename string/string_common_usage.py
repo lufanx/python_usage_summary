@@ -25,5 +25,10 @@ def start_main():
     i = str_str.find('world')
     print i
 
+    dts = "  world  "
+    print dts.split()
+    buf = "This is test"
+    print buf.replace('is', 'not is')
+
 if __name__ == "__main__":
     start_main()
