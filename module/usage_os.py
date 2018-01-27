@@ -51,6 +51,33 @@ class System:
     def name(self):
         print (os.name)
 
+    def path_isdir(self):
+        if os.path.isdir('/tmp'):
+            print ('/tmp is dir')
+        else:
+            print ('/tmp not is dir')
+
+    def path_isfile(self):
+        if os.path.isfile('/tmp'):
+            print ('/tmp is file')
+        else:
+            print ('/tmp not is file')
+
+    def path_exists(self):
+        if os.path.exists('/tmp'):
+            print ('exist tmp dir or file')
+        else:
+            print ('not exist tmp dir or file')
+
+    def path_basename(self):
+        """return 'file'"""
+        return os.path.absname('/tmp/file')
+
+    def path_dirname(self):
+        """retunr 'tmp'"""
+        return os.path.dirname('/tmp/file')
+
+
 
 test1 = System()
 test1.getcwd()
@@ -67,3 +94,8 @@ test1.getenv()
 test1.curdir()
 test1.pardir()
 test1.name()
+test1.path_isdir()
+test1.path_isfile()
+test1.path_exists()
+test1.path_absname()
+test1.path_dirname()
