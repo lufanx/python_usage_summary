@@ -3,6 +3,7 @@
 import time
 
 class Time:
+    """about time module include time, localtime, gmtime, mktime, sleep, strftime"""
     def time(self):
         ret = (int)(time.time())
         return ret
