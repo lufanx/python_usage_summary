@@ -18,6 +18,7 @@ console_handler.setFormatter(formatter)
 LOG.addHandler(file_handler)
 LOG.addHandler(console_handler)
 
+#printf log info
 LOG.debug('This is debug infomation!')
 LOG.info('This is info infomation!')
 LOG.warn('This is warn infomation!')
