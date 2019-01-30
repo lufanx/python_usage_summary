@@ -30,5 +30,9 @@ def start_main():
     buf = "This is test"
     print buf.replace('is', 'not is')
 
+    test_name = ' python '
+    test_name = test_name.strip()
+    print(test_name)
+
 if __name__ == "__main__":
     start_main()
